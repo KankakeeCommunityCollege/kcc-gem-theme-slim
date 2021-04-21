@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{177:function(n,e,t){"use strict";t.r(e);function i(n){n.classList.contains("show")&&$(n).collapse("hide")}function o(){window.innerWidth>=992&&i(document.getElementById("headerGlobalNavbarContent"))}e.default=function(){window.addEventListener("resize",o)}}}]);

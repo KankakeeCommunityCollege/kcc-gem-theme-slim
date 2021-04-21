@@ -77,20 +77,11 @@ function checkClickedButton(event) {
 function clickEventHandler(event) {
   if ( event.target.closest('#openSearchButton') || event.target.closest('#closeSearchButton') ) {
     checkClickedButton(event);
-  } else {
-    return; // Bail-out
   }
 }
 
-function addClickEventListener() {
-  document.addEventListener('click', clickEventHandler);
-}
-
 function initSearchToggle() {
-  if ( ! document.getElementById('openSearchButton') )
-    return;
-
-  addClickEventListener();
+  document.addEventListener('click', clickEventHandler);
 }
 
 export default initSearchToggle;

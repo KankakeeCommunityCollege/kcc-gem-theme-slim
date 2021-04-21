@@ -14,7 +14,7 @@ function walkText(node) {
     node.data = node.data.replace(emDashOrTripleHyphensRegex, replacerFunction);
   }
   if (node.nodeType == 1 && node.nodeName != 'SCRIPT') {
-    for (var i = 0; i < node.childNodes.length; i++) {
+    for (let i = 0, len = node.childNodes.length; i < len; i++) {
       walkText(node.childNodes[i]);
     }
   }

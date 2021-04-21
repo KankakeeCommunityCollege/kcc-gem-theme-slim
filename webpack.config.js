@@ -16,7 +16,8 @@ const config = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'assets', 'js', 'theme', 'dist')
+    path: path.resolve(__dirname, 'assets', 'js', 'theme', 'dist'),
+    publicPath: '/assets/js/theme/dist/' // publicPath is needed for Webpack to dynamically load chunks without error!
   },
   module: {
     rules: [

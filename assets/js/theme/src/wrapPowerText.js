@@ -7,7 +7,7 @@ function replaceRegex(el) {
 }
 
 function loopOverNodeList(nodeList) {
-  for (var i = 0; i < nodeList.length; i++) {
+  for (let i = 0, len = nodeList.length; i < len; i++) {
     replaceRegex(nodeList[i]);
   }
 }

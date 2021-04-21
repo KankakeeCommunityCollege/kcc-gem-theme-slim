@@ -28,7 +28,7 @@ function createStyleConfigurationObject() {
 function setStyles(selector, styles, IFRAME_MENU_ELEMENT) {
   const content = IFRAME_MENU_ELEMENT.contentWindow;
   const itemsToStyle = content.document.querySelectorAll(selector);
-  for (let i = 0; i < itemsToStyle.length; i++) {
+  for (let i = 0, len = itemsToStyle.length; i < len; i++) {
     const items = itemsToStyle[i];
     items.setAttribute('style', styles);
   }
@@ -36,21 +36,23 @@ function setStyles(selector, styles, IFRAME_MENU_ELEMENT) {
 
 function watchForMenuClicks() {
   // RESTYLE THE DROPDOWN MENU
-  if (document.getElementById('google_translate_element')) {
-    const GOOGLE_TRANSLATE_ELEMENT = document.getElementById('google_translate_element');
-    const styleConfigurationObject = createStyleConfigurationObject();
-    const iframeStyles = setIframeStyles();
-    GOOGLE_TRANSLATE_ELEMENT.addEventListener('click', function (event) {
-      const IFRAME_MENU_ELEMENT = document.querySelector('iframe[class*="goog-te-menu-frame"]');
+  if (!document.getElementById('google_translate_element'))
+    return;
 
-      //event.preventDefault();
-      styleIFrameElement(IFRAME_MENU_ELEMENT, iframeStyles);
-      Object.keys(styleConfigurationObject).forEach(function(selector) {
-        setStyles(selector, styleConfigurationObject[selector], IFRAME_MENU_ELEMENT);
-      });
+  const GOOGLE_TRANSLATE_ELEMENT = document.getElementById('google_translate_element');
+  const styleConfigurationObject = createStyleConfigurationObject();
+  const iframeStyles = setIframeStyles();
 
-    }, false);
-  }
+  GOOGLE_TRANSLATE_ELEMENT.addEventListener('click', () => {
+    const IFRAME_MENU_ELEMENT = document.querySelector('iframe[class*="goog-te-menu-frame"]');
+
+    //event.preventDefault();
+    styleIFrameElement(IFRAME_MENU_ELEMENT, iframeStyles);
+    Object.keys(styleConfigurationObject).forEach(function(selector) {
+      setStyles(selector, styleConfigurationObject[selector], IFRAME_MENU_ELEMENT);
+    });
+
+  }, false);
 }
 
 export default watchForMenuClicks;
