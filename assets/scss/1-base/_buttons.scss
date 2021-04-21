@@ -80,3 +80,10 @@
     line-height: 48px;
   }
 }
+
+.buttons__no-decoration,
+.buttons__no-decoration:focus,
+.buttons__no-decoration:hover,
+.buttons__no-decoration:visited {
+  text-decoration: none;
+}
