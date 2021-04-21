@@ -6,46 +6,6 @@ timezone: America/Chicago
 google-tag_key: Google Tag Manager key goes here
 core_site: true
 #translate: true ## Uncomment to activate Google Translate Powers (unfortunately no cowpowers)!!
-nav_config:
-  smaller_brand: true
-nav_links:
-  - link_text: Home
-    link_href: ''
-    button: false
-  - link_text: Landing Page
-    link_href: 'landing-page'
-    button: false
-  - link_text: accordion
-    link_href: 'accordion'
-    button: false
-  - link_text: Tabbed Navigation
-    link_href: 'tabbed-nav'
-    button: false
-  - link_text: Enroll
-    dropdown:
-      - text: Community Literacy
-        href: 'programs/community-literacy'
-      - text: English as a Second Language
-        href: 'programs/esl'
-      - text: GED/High School Equivalency
-        href: 'programs/ged'
-#  - link_text: Example External Link
-#    link_href: 'https://example-external-link.com'
-#    button: false
-#    external: true  <---- #### Add the `external: true` key & value to make an external link ####
-#
-#### Example sub-nav configuration below #### =============================================================== #
-##                                                                                                           ##
-##   `link_href:` values must have a single '/' in the link (no '/' in the begining or end of the string)    ##
-##                                                                                                           ##
-## ========================================================================================================== #
-#
-#sub-nav_links:
-#  - link_text: Sheets
-#    link_href: 'reference/gsheets'
-#  - link_text: CloudCannon
-#    link_href: 'reference/cloudcannon'
-#
 collections:
   tabs:
     output: false

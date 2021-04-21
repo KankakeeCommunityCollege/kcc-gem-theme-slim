@@ -9,8 +9,6 @@ const config = {
   //entry: path.join(__dirname, 'webpack', 'main'),
   entry: {
     'kcc-theme': './assets/js/theme/src/all.js',
-    'kcc-theme-landing': './assets/js/theme/landing/landing.js',
-    'kcc-nav': './assets/js/theme/nav/nav/nav.js',
     'kcc-mega-nav': './assets/js/theme/nav/megaNav/megaNav.js',
     'alerts': './assets/js/theme/alerts/alerts.js'
   },

@@ -3,7 +3,6 @@
 @import '0-tools/bootstrap-overrides';
 @import '0-tools/cloudcannon';
 @import '0-tools/gsc-overrides';
-@import '0-tools/targetx-overrides';
 @import '0-tools/google-translate-overrides';
 
 // Base items
@@ -17,35 +16,21 @@
 @import '1-base/html';
 
 // Modular components
-@import '2-modules/header';
 @import '2-modules/footer';
-@import '2-modules/sliders';
-@import '2-modules/social-icons';
-@import '2-modules/nav-landing'; // Styles for the navbar in landing pages.
-@import '2-modules/nav-global';  // Remove after implimenting the new header-global with mega-nav.
-@import '2-modules/error';
 @import '2-modules/benefits';
 @import '2-modules/hero-slider';
-@import '2-modules/img-hover';
-@import '2-modules/sub-nav';
 @import '2-modules/card-section';
 @import '2-modules/contacts';
 @import '2-modules/accordion';
-@import '2-modules/loader';
-@import '2-modules/nav-global';
-@import '2-modules/nav-local';
 @import '2-modules/yt-embed';
 @import '2-modules/breadcrumbs';
 
 // Layout items
 // @import "3-layout/...";
 @import '3-layout/positioning';
-@import '3-layout/margins';
-@import '3-layout/padding';
-@import '3-layout/tables';
 @import '3-layout/section';
 @import '3-layout/background';
-@import '3-layout/thank-you';
+@import '3-layout/margins';
 
 // Page specific styling
 // @import "4-pages/...";

@@ -2,7 +2,7 @@
 layout: default
 homepage: true
 baseurl: '/'
-title: KCC Gem Theme
+title: KCC Gem Theme - Slim
 description: ''
 yt_embed: https://youtu.be/LUCrx9chw-c
 slides:
@@ -123,14 +123,21 @@ cards:
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {% include accordion.html %}
+      </div>
+    </div>
+  </div>
   {% comment %}{% include contacts.html %}{% endcomment %}
 </main>
-
+{% include benefits.html %}
 <section class="mt-5">
   <div class="container">
     <div class="row">
       <div class="col">
-
+        {% include contacts.html %}
       </div>
     </div>
   </div>
