@@ -4,7 +4,7 @@
 // =================================================== */
 // See https://webpack.js.org/guides/code-splitting/ and https://webpack.js.org/guides/lazy-loading/ for info on
 // Dynamic imports in Webpack 5
-document.addEventListener('DOMContentLoaded', () => {
+function alerts() {
   import(/* webpackChunkName: 'checkForPrefersReducedMotion' */'./checkForPrefersReducedMotion')
   .then(({ default: checkForPrefersReducedMotion }) => {  // Webpack returns the module so the default function must be specified!
     checkForPrefersReducedMotion();
@@ -23,10 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }).catch(err => {
     throw new Error(`ERROR!!! \n${err.message}`)
   });
+}
 
-  //checkForPrefersReducedMotion();
-
-  // ! window.sessionStorage.getItem('Alert-Content') ? // Checks if our cached alert is already in sessionStorage
-  //   gapi.load('client', start) // If not, build the alert from a new Google API response
-  // : getCachedResponse(); // Otherwise, build the alert from our cached response
-});
+export default alerts;

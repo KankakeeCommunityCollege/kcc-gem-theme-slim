@@ -1,4 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  import(/* webpackChunkName: 'alerts' */ '../alerts/alerts').then(({ default: alerts }) => {
+    alerts();
+  });
   if (document.getElementsByClassName('hero-slider__slider')) {
     import(/* webpackChunkName: 'sliders' */ './sliders').then(({ default: initSliders }) => {
       initSliders();
@@ -29,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
     });
+    import(/* webpackChunkName: 'nav' */ '../nav/megaNav').then(({ default: megaNav }) => {
+      megaNav();
+    })
   }
   //lazyLoad();
   //walkText(document.body);
