@@ -2,7 +2,7 @@
 
 ### A slimmer Jekyll theme for new KCC sites.
 
-[![Gem Version](https://badge.fury.io/rb/kcc-gem-theme.svg)](https://badge.fury.io/rb/kcc-gem-theme)
+[![Gem Version](https://badge.fury.io/rb/kcc-gem-theme-slim.svg)](https://badge.fury.io/rb/kcc-gem-theme-slim)
 
 ---
 
