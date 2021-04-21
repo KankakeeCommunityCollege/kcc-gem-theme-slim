@@ -1,6 +1,6 @@
-# kcc-gem-theme
+# kcc-gem-theme-slim
 
-### A Jekyll theme for new KCC sites.
+### A slimmer Jekyll theme for new KCC sites.
 
 [![Gem Version](https://badge.fury.io/rb/kcc-gem-theme.svg)](https://badge.fury.io/rb/kcc-gem-theme)
 
